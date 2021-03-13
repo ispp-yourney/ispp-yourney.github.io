@@ -10528,8 +10528,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .logo{
   position: relative;
-  bottom: 100px;
-  width: 60%;;
+  bottom: 140px;
+  width: 70%;;
   height: auto; 
   box-sizing: content-box;
   
@@ -10542,6 +10542,10 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .begin{
   position: relative;
-  bottom: 100px;
+  bottom: 240px;
 }
 
+.slog{
+  position: relative;
+  bottom:290px;
+}
