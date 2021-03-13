@@ -2451,7 +2451,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #272c3a;
   border-color: #ffff;
-  box-shadow: 0 0 0 0.2rem rgba(254, 216, 84, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(53, 126, 51, 0.5);
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
@@ -2464,7 +2464,7 @@ fieldset:disabled a.btn {
   border-color: #ffff;
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(254, 216, 84, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(61, 126, 90, 0.5);
 }
 
 .btn-secondary {
@@ -2584,7 +2584,7 @@ fieldset:disabled a.btn {
   border-color: #ffff;
 }
 .btn-warning:not(:disabled):not(.disabled):active:focus, .btn-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-warning.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(254, 216, 84, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(60, 126, 71, 0.5);
 }
 
 .btn-danger {
@@ -2687,7 +2687,7 @@ fieldset:disabled a.btn {
   border-color: #706e66;
 }
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(57, 117, 80, 0.5);
 }
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
   color: #706e66;
@@ -2699,7 +2699,7 @@ fieldset:disabled a.btn {
   border-color: #706e66;
 }
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(62, 122, 94, 0.5);
 }
 
 .btn-outline-secondary {
@@ -2787,7 +2787,7 @@ fieldset:disabled a.btn {
   border-color: #706e66;
 }
 .btn-outline-warning:focus, .btn-outline-warning.focus {
-  box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(48, 99, 63, 0.5);
 }
 .btn-outline-warning.disabled, .btn-outline-warning:disabled {
   color: #706e66;
@@ -2799,7 +2799,7 @@ fieldset:disabled a.btn {
   border-color: #706e66;
 }
 .btn-outline-warning:not(:disabled):not(.disabled):active:focus, .btn-outline-warning:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-warning.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(254, 209, 54, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(54, 109, 63, 0.5);
 }
 
 .btn-outline-danger {
@@ -3926,7 +3926,7 @@ input[type=button].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #fed136;
+  background-color: #3f6d4d;
 }
 
 .nav-fill > .nav-link,
@@ -10123,7 +10123,7 @@ img::-moz-selection {
 }
 header.masthead {
   padding-top: 10.5rem;
-  padding-bottom: 6rem;
+  padding-bottom: -20rem;
   text-align: center;
   color: #fff;
   background-image: url("../assets/img/header-bg.jpg");
@@ -10149,8 +10149,8 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 17rem;
-    padding-bottom: 12.5rem;
+    padding-top: -17rem;
+    padding-bottom: -12.5rem;
   }
   header.masthead .masthead-subheading {
     font-size: 4.25rem;
@@ -10529,7 +10529,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 .logo{
   position: relative;
   bottom: 140px;
-  width: 70%;;
+  width: 80%;;
   height: auto; 
   box-sizing: content-box;
   
@@ -10542,10 +10542,13 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .begin{
   position: relative;
-  bottom: 240px;
+  bottom: 200px;
+  height: auto;
 }
 
 .slog{
   position: relative;
-  bottom:290px;
+  bottom:240px;
+  max-width: 100%;
+  height: auto;
 }
