@@ -10552,3 +10552,19 @@ section#contact form#contactForm :-ms-input-placeholder {
   max-width: 100%;
   height: auto;
 }
+
+.politicas{
+  position: relative;
+  margin-bottom: 70px;
+  top: 70px;
+}
+
+.ballpolicy{
+  position: relative;
+  right: 240px;
+}
+
+.ballterms{
+  position: relative;
+ 
+}
