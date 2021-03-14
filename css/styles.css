@@ -10532,6 +10532,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   width: 80%;;
   height: auto; 
   box-sizing: content-box;
+  margin-bottom: 30px;
   
 }
 
@@ -10542,13 +10543,13 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .begin{
   position: relative;
-  bottom: 200px;
+  bottom: 300px;
   height: auto;
 }
 
 .slog{
   position: relative;
-  bottom:240px;
+  bottom:350px;
   max-width: 100%;
   height: auto;
 }
@@ -10567,4 +10568,27 @@ section#contact form#contactForm :-ms-input-placeholder {
 .ballterms{
   position: relative;
  
+}
+
+@media only screen and (max-width: 400px) {
+  .logo {
+    position: relative;
+    bottom: 140px;
+    width: 100%;;
+    height: auto; 
+    box-sizing: content-box;
+    margin-bottom: 30px;
+  }
+  
+  .slog{
+    position: relative;
+    bottom:240px;
+    max-width: 100%;
+    height: auto;
+  }
+  .begin{
+    position: relative;
+    bottom: 200px;
+    height: auto;
+  }
 }
