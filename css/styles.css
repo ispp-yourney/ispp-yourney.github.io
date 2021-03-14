@@ -10122,8 +10122,8 @@ img::-moz-selection {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
-  padding-bottom: -20rem;
+  padding-top: 12.5rem;
+  padding-bottom: -30rem;
   text-align: center;
   color: #fff;
   background-image: url("../assets/img/header-bg.jpg");
@@ -10537,7 +10537,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .ball{
   position: relative;
-  right: 1100px;
+ 
 }
 
 .begin{
