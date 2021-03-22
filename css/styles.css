@@ -10570,6 +10570,11 @@ section#contact form#contactForm :-ms-input-placeholder {
  
 }
 
+.visit{
+  position: relative;
+  top: 50px;
+}
+
 @media only screen and (max-width: 800px) {
   .logo {
     position: relative;
@@ -10591,6 +10596,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     bottom: 200px;
     height: auto;
   }
+
 
   
   
