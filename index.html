@@ -18,8 +18,9 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         
-       
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -30,9 +31,11 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger animated-link" href="#services">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger animated-link" href="#story">Nuestra historia</a></li>
+
                         <li class="nav-item"><a class="nav-link js-scroll-trigger animated-link" href="#about">Sobre nosotros</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger animated-link" href="#team">Equipo</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger animated-link" href="#contact">Contactanos</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger animated-link" href="#contact">Contáctanos</a></li>
                     </ul>
                 </div>
 
@@ -43,8 +46,8 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
+        <header class="masthead"  >
+            <div class="container" data-aos="fade-down" data-aos-delay="200" style="margin-bottom: 100px">
                
                  
                 <img class="logo" src="assets/img/logo_ispp.png">
@@ -60,8 +63,12 @@
             </div>
         </header>
         <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="container">
+
+
+
+
+        <section class="page-section" id="services"style="margin-bottom:130px">
+            <div class="container"    data-aos="fade-right" data-aos-delay="300">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Servicios</h2>
                     <h3 class="section-subheading text-muted">¿Qué podemos ofrecerte?</h3>
@@ -102,10 +109,57 @@
                 </div>
             </div>
         </section>
+
+
+
         <div class="divider py-0.5 bg-grey"><hr></div>
-        <!-- About-->
-        <section class="page-section" id="about">
+
+         <!-- About-->
+         <section class="page-section" id="story" data-aos="fade-right" data-aos-delay="200" style="margin-top: 70px;">
             <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase" style="margin-bottom: 100px;">Nuestra historia</h2>
+                </div>
+                <ul class="timeline">
+                    <li>
+                       
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="" /></div>
+                  
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>23-02-2021</h4>
+                                <h4 class="subheading">Inicios</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Yourney surgió como un proyecto para la asignatura ISPP con el objetivo de ayudar a los viajeros a conocer y compartir sus experiencias.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted v1">
+                        <a href="https://fe-dev-yourney.herokuapp.com/">
+                        <div class="timeline-image asd "><img class="rounded-circle img-fluid first" src="assets/img/icon.png" alt="" /></div>
+                    </a>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>05-02-2021</h4>
+                                <h4 class="subheading">Primera versión</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Primera versión funcional de Yourney.</p></div>
+                        </div>
+                    </li>
+                   
+                    
+                </ul>
+            </div>
+        </section>
+       
+        
+
+        <div class="divider py-0.5 bg-grey" style="position: relative; top: 70px;"><hr></div>
+
+
+
+        <!-- About-->
+        <section class="page-section" id="about" data-aos="fade-right" data-aos-delay="200" style="margin-bottom: 50px; margin-top: 180px;">
+            <div class="container" >
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Sobre nosotros</h2>
                     <h3 class="section-subheading text-muted">Equipo formado por estudiantes de la Universidad de Sevilla dedicados al desarrollo de soluciones software.</h3>
@@ -130,13 +184,14 @@
         </section>
 
         <!-- Team-->
-        <section class="page-section bg-light" id="team">
+        
+        <section class="page-section bg-light" id="team" style="margin-bottom: 50px">
             
-                <div class="text-center">
+                <div class="text-center" data-aos="fade-right" data-aos-delay="200">
                     <h2 class="section-heading text-uppercase">Nuestro equipo de trabajo</h2>
                 </div>
               
-                <div class="owl-carousel owl-theme">
+                <div class="owl-carousel owl-theme" data-aos="fade-right" data-aos-delay="200">
                 
                     <div>
                         <img class="carousel-img" src="assets/img/team/Juan_Noguerol.jpg">
@@ -235,12 +290,12 @@
             
             
         </section>
-        <div class="divider py-1 bg-grey"><hr></div>
+        <div class="divider py-1 bg-grey" style="position: relative; top: 120px;"><hr></div>
         
 
           
         <!-- Contact-->
-        <section class="page-section-contact" id="contact">
+        <section class="page-section-contact" id="contact" data-aos="fade-up" data-aos-delay="200" style="margin-bottom: 50px">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Contáctanos</h2>
@@ -318,7 +373,15 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
         <script src="js/carousel.js"></script>
-        
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 30,
+                duration: 1500
+            });
+          </script>
+
         
     </body>
 </html>
