@@ -10516,7 +10516,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   display: block;
   width: 0;
   height: 4px;
-  background: rgb(36, 34, 34);
+  background: rgb(235, 230, 230);
   transition: width .1s;
 }
 
