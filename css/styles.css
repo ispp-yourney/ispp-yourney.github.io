@@ -10656,7 +10656,12 @@ section#contact form#contactForm :-ms-input-placeholder {
     position: relative;
     top: 20px;
   }
+
+  .separator{
+    margin-bottom: 50px;
+  }
 }
 
-  
-  
+.video:hover{
+  color: #062c33;
+}
