@@ -10640,6 +10640,17 @@ section#contact form#contactForm :-ms-input-placeholder {
   
 }
 
+.banner{
+  width: 100%;
+  content: url("../assets/img/banner.PNG");
+}
+
+.folleto{
+  width: 200%;
+  position: relative;
+  left: 200px;
+}
+
 .first{
   position: relative;
   top: 10px;
@@ -10660,8 +10671,19 @@ section#contact form#contactForm :-ms-input-placeholder {
   .separator{
     margin-bottom: 50px;
   }
+
+  .folleto{
+      width: 100%;
+      position: relative;
+      left: 5px;
+  }
+  .banner{
+    content: url("../assets/img/banner-mobil.PNG");
+    background-color: #000;
+  }
 }
 
 .video:hover{
   color: #062c33;
 }
+
