@@ -10642,7 +10642,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .banner{
   width: 100%;
-  content: url("../assets/img/banner.PNG");
+  content: url("../assets/img/banner.png");
 }
 
 .folleto{
@@ -10663,6 +10663,7 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 400%;
   width: 200%; 
 }
+
 @media only screen and (max-width: 800px) {
   .first{
     position: relative;
