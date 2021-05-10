@@ -10656,6 +10656,13 @@ section#contact form#contactForm :-ms-input-placeholder {
   top: 10px;
   left: 5px;
 }
+
+.panfleto{
+  position: relative; 
+  left: 200px;
+  height: 400%;
+  width: 200%; 
+}
 @media only screen and (max-width: 800px) {
   .first{
     position: relative;
@@ -10680,6 +10687,14 @@ section#contact form#contactForm :-ms-input-placeholder {
   .banner{
     content: url("../assets/img/banner-mobil.PNG");
     background-color: #000;
+  }
+
+  .panfleto{
+    position: relative; 
+    left: 5px;
+    height: 400%;
+    width: 100%; 
+
   }
 }
 
