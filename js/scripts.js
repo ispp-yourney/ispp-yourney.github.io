@@ -55,3 +55,6 @@
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
 
+$('#exampleModal').on('shown.bs.modal', function() {
+    $(this).find('iframe').attr('src','assets/img/recursos.pdf')
+})
