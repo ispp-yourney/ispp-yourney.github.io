@@ -319,6 +319,59 @@
 
             </div>
 
+            <br><br>
+
+            <h3 class="text-center">ROI</h3><br>
+
+            <div style="display:block; margin: 0 auto; max-width: 800px">
+                <canvas id="graficoROI"></canvas>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <h4>Costes</h4>
+
+                    <p><b>Producción</b>: 
+                        Salarios Ing. Software, community manager y diseñadores gráficos
+                    </p>
+
+                    <p><b>Mantenimiento</b>: 
+                        Promociones, anuncios en rrss, nuevas funcionalidades (botón de reporte de contenido, sistema de referidos), salarios administrador, DPO e Ing. Software
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h4>Ingresos</h4>
+
+                    <p>Número de clientes crecientes hasta ~28/mes</p>
+                </div>
+            </div>
+
+            <br><br>
+
+            <h3 class="text-center">1000 acciones de 32,92€/u</h3><br>
+
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <canvas id="graficoAcciones"></canvas>
+                </div>
+
+                <div class="col-md-2"></div>
+
+                <div class="col-md-6">
+                    <h4>Calendario bursátil</h4>
+
+                    <p><b>Ronda semilla</b> (08/06/2021) : 
+                        Se liberan 100 acciones, lo que supone un 10% del total
+                    </p>
+
+                    <p><b>Business Angel</b> (08/06/2022) : 
+                        Se liberan 150 acciones, lo que supone entre un 15% - 25% del total al añadirse el remanente de la ronda semilla
+                    </p>
+
+                </div>
+            </div>
         </div>
 
 
@@ -332,19 +385,6 @@
                 </button>
 
             </div>
-
-            <div class="row text-center" style="margin-bottom: 200px;">
-
-                <!-- Button trigger modal -->
-
-
-
-
-
-
-            </div>
-
-
 
         </div>
 
@@ -380,7 +420,7 @@
 
     <!-- About-->
 
-    <section class="page-section" id="about" data-aos="fade-right" style="margin-bottom: 50px; margin-top: 180px;">
+    <section class="page-section" id="about" data-aos="fade-right" style="margin-bottom: 50px">
 
         <div class="container">
 
@@ -731,6 +771,68 @@
             offset: 30,
             duration: 1500
         });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+    var acciones = document.getElementById('graficoAcciones').getContext('2d');
+    var roi = document.getElementById('graficoROI').getContext('2d');
+    var graficoAcciones = new Chart(acciones, {
+        type: 'pie',
+        data:{
+            datasets: [{
+                data: [25,30,10,10,25],
+                backgroundColor: ['#5b1647', '#93073e', '#c90035','#ff5627','#ffc400']}],
+            labels: ['Equipo','Project Manager','Líder Frontend','Líder Backend','Inversores']},
+        options: {
+            responsive: true,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Reparto acciones %'
+                },
+                legend: {
+                    position: 'bottom'
+                }
+            }}
+        });
+    var graficoROI = new Chart(roi, {
+        type: 'line',
+        data: {
+            labels: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24],
+            datasets: [{
+                label: 'Costes estimados',
+                data: [26430, 30267, 34104, 38112, 42120, 46128, 50136, 56539, 62941, 69344, 75747, 82149, 88552],
+                fill: false,
+                borderColor: '#c79da6'},
+                {
+                label: 'Ingresos estimados',
+                data: [0, 4400, 8300, 12400, 18100, 25150, 33150, 41150, 51150, 61350, 73150, 86550, 100750],
+                fill: false,
+                borderColor: '#63495e'
+        }]},
+        options: {
+            responsive: true,
+            scales: {
+                yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString:"hola"
+                }
+                }],
+                xAxes: [{
+                    scaleLabel: {
+                        display: true
+                    }
+                }]
+            },
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Euros (€) por mes tras el lanzamiento'
+                }
+            }
+        }
+    });
     </script>
 
 
